@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url(myscript.js);
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+#scrollbubble {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 500;
+    padding: 3px 8px;
+    background-color: teal;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+#scrollbubble:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    height: 0;
+    width: 0;
+    margin-top: -4px;
+    border: 4px solid transparent;
+    border-left-color: teal;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #0fcfff;
+    -webkit-border-radius: 7px;
+    height: 3px !important;
+    
+}
+
+.navbar-brand{
+    font-family: 'Montserrat';
+    font-size: 35px;
+    color: rgb(56, 56, 56) !important;
+}
+
+.navbar-nav{
+    margin-left: -10%;
+}
+
+.nav-link{
+    font-size: 16px;
+    margin: 10px !important;
+    color: grey !important;
+}
+
+.nav-link:hover{
+    color: #0fcfff !important; 
+}
+
+.active .nav-link{
+    color: #0fcfff !important;
+}
+
+.site-content{
+    background-image: url("Images/IMG (7).jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-position-x: -8in;
+}
+
+.site-title, .site-desc{
+    color: white;
+    font-family: 'Montserrat'
+}
+
+.site-title{
+    margin-top: 30%;
+    margin-bottom: 3%;
+    font-size: 50px;;
+    text-align: center;
+}
+
+.site-desc{
+    font-size: 14px;
+    text-align: center;
+}
+
+.site-btn1{
+    background-color: white;
+    margin-left: 1%;
+    margin-top: 0%;
+    margin-bottom: 50%;
+    padding-left: 15%;
+    border-radius: 5px;
+    transition: all 300ms ease-in;
+}
+
+.site-btn2{
+    background-color: #0fcfff;
+    margin-left: 1%;
+    margin-top: 12%;
+    margin-bottom: 50%;
+    padding-left: 15%;
+    border-radius: 5px;
+    transition: all 300ms ease-in;
+    color: white;
+    font-weight: bold;
+}
+
+.site-btn3{
+    background-color: salmon;
+    margin-left: 1%;
+    margin-top: 12%;
+    margin-bottom: 50%;
+    padding-left: 15%;
+    border-radius: 5px;
+    transition: all 300ms ease-in;
+    color: white;
+    font-weight: bold;
+}
+
+.site-btn3:active{
+    background: teal !important;
+}
+
+.site-btn3:focus{
+    background: teal !important;
+}
+
+.site-btn1:hover{
+    background-color: #0fcfff !important;
+    border-color: #0fcfff !important;
+    color: white !important;
+    transition: all 300ms ease-in;
+}
+
+/* Sectopm-1 */
+.section-1  .heading-1{
+    margin-top: 8%;
+    margin-bottom: 2%;
+    font-size: 39px;
+}
+
+.section-1 a:hover{
+    color: #0fcfff !important;
+    text-decoration: none !important; 
+}
+
+.section-1 .card {
+    height: 450px;
+    margin-bottom: 20%;
+}
+
+.section-1 .para-1{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.section-1 .card-text, .para-1{
+    color: rgba(0, 0, 0, 0.59)
+}
+
+.section-1{
+    margin-bottom: 8%;
+}
+
+.card{
+    width: 20rem;
+}
+
+/* Section-2 */
+.section-2 .container-fluid{
+    background-image: url("Images/IMG (5).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.section-2 .heading-1{
+    margin-top: 20%;
+    margin-bottom: 4%;
+    color: whitesmoke;
+    width: 80%;    
+}
+
+.section-2 .para{
+    width: 60%;
+    color: whitesmoke;
+    margin-bottom: 7%;
+}
+
+.section-2 .btn{
+    margin-bottom: 15%;
+    width: 30%;
+    padding: 2% 5%;
+    border-radius: 5px;
+    background-color: #0fcfff;
+    border: none;
+}
+
+.section-2 .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Section-3 */
+.section-3{
+    background-image: url("Images/IMG (3).jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.section-3 .container {
+    margin-left: 20%;
+    background-color: whitesmoke;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.59);
+    color: gray;
+}
+
+.section-3 .btn.btn-primary.btn-sm{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 0px;
+    margin-left: 15px !important;
+    border-radius: 5px;
+    background-color: #0fcfff;
+    border: none;
+}
+
+.section-3 input[type="text"]{
+    border-radius: 5px !important;
+}
+
+.section-3 .pull-right.text-muted{
+    color: #0fcfff !important;
+}
+
+/* Section-4 */
+.section-4 {
+    margin-top: 8%;
+    background-image: url("Images/IMG (6).jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-4 .row .col-md-10{
+    margin-top: 10%;
+    margin-bottom: 8%;
+    padding: 10%;
+    margin-left: 40%;
+}
+
+.section-4 a{
+    color: lightseagreen;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.section-4 .para-1{
+    color: white;
+    margin-top: 5%;
+    font-size: 23px;
+}
+
+.section-5 .btn{
+    border-radius: 5px;
+    margin-left: 1%;
+    background-color: #0fcfff;
+    border: none;
+}
+
+.section-5 .form-control{
+    border-radius: 5px;
+    margin-left: -1%;
+}
+
+/* Footer */
+.social i{
+    color: #0fcfff;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .section-1 .card{
+        width: 14rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .site-content .site-title{
+        font-size: 30px;
+        padding-left: 15%; 
+    }
+
+    .site-content .site-btn2{
+        display: none;
+    }
+
+    .site-content .site-btn1{
+        margin-left: 15%;
+    }
+
+    .section-1 .heading-1 , .heading-2{
+        font-size: 25px;
+    }
+
+    .section-1 .col-md-4{
+        padding: 5%;
+        margin-left: 8%;
+    }
+
+    .section-1 .card{
+        width: 15rem;
+    }
+    .section-4 .col-md-10{
+        padding: 0% 15%;
+    }
+
+    footer input[type="button"]{
+        margin-top: 15% !important;
+    }
+}

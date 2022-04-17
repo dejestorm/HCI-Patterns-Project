@@ -1,0 +1,44 @@
+.breadcrumb{
+    font-size: 18px;
+}
+
+body{
+    background-image: url("../Images/IMG (7).jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.breadcrumb .active:hover{
+    color: white;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+}
+
+.btn {
+    font-size: 18px;
+    background-color: #0fcfff;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    right:    10px;
+    top:   5px;
+    border: none;
+}
+
+a{
+    text-decoration: none !important;
+    color: #0fcfff !important;
+}
+
+.active a:hover{
+    color: salmon !important;
+}
+
+a:hover{
+    color: teal !important;
+}
+
+.active a{
+    text-decoration: none !important;
+    color: #034758 !important;
+}
